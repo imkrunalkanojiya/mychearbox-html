@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background-color: #fff !important;
+  transition: 0.8s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sticky + #app-main {
+  padding-top: 102px;
+}
+
+#app-body {
+  position: relative;
+}
+#app-body #app-header {
+  width: 100%;
+  background-color: #eda9d7;
+  z-index: 10;
+  position: relative;
+  transition: 0.8s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#app-body #app-header .app-header {
+  position: relative;
+  z-index: 10;
+}
+#app-body #app-header .app-header .container .navbar .container-fluid .navbar-brand img {
+  width: 60px;
+}
+#app-body #app-header .app-header .container .navbar .container-fluid .custom-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 991px) {
+  #app-body #app-header .app-header .container .navbar .container-fluid .custom-nav .navbar-nav {
+    width: 100%;
+  }
+}
+#app-body #app-header .app-header .container .navbar .container-fluid .custom-nav .navbar-nav .nav-item {
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  #app-body #app-header .app-header .container .navbar .container-fluid .custom-nav .navbar-nav .nav-item {
+    margin-left: 0px;
+  }
+  #app-body #app-header .app-header .container .navbar .container-fluid .custom-nav .navbar-nav .nav-item:hover {
+    color: #ee2197;
+  }
+}
+#app-body #app-header .app-header .container .navbar .container-fluid .custom-nav .navbar-nav .nav-item .nav-link {
+  color: #7b7b7b;
+  font-weight: 500;
+  font-size: 16px;
+}
+#app-body #app-header .app-header .container .navbar .container-fluid .custom-nav .navbar-nav .nav-item .nav-link:hover {
+  color: #000000;
+}
+#app-body #app-header .app-header .container .navbar .container-fluid .custom-nav .navbar-nav .nav-item .active {
+  color: #000000;
+  font-weight: 500;
+}
+#app-body #app-main {
+  position: relative;
+  z-index: 5;
+}
+#app-body #app-main #app-hero-section {
+  position: relative;
+  width: 100%;
+  background-image: url("../images/hero-banner.png");
+  height: 1270px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  #app-body #app-main #app-hero-section {
+    height: 800px;
+  }
+}
+#app-body #app-main #app-hero-section .app-hero-vector img {
+  width: 40%;
+  margin-top: -20px;
+  margin-left: -20px;
+  z-index: 5;
+}
+#app-body #app-main #app-feature-section {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  margin-top: -470px;
+}
+@media (max-width: 768px) {
+  #app-body #app-main #app-feature-section {
+    margin-top: -700px;
+  }
+}
+#app-body #app-main #app-feature-section .app-feature-section {
+  position: relative;
+  background-image: url("../images/feature-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 350px 0px 100px 0px;
+}
+@media (max-width: 768px) {
+  #app-body #app-main #app-feature-section .app-feature-section {
+    padding: 690px 0px 100px 0px;
+  }
+}
+#app-body #app-main #app-feature-section .app-feature-section .app-feature-vec-1 {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+@media (max-width: 1200px) {
+  #app-body #app-main #app-feature-section .app-feature-section .app-feature-vec-1 {
+    top: 175px;
+  }
+}
+@media (max-width: 768px) {
+  #app-body #app-main #app-feature-section .app-feature-section .app-feature-vec-1 {
+    top: 530px;
+  }
+}
+#app-body #app-main #app-feature-section .app-feature-section .app-feature-vec-1 img {
+  width: 100%;
+  float: right;
+}
+@media (max-width: 1440px) {
+  #app-body #app-main #app-feature-section .app-feature-section .app-feature-vec-1 img {
+    width: 75%;
+  }
+}
+@media (max-width: 1200px) {
+  #app-body #app-main #app-feature-section .app-feature-section .app-feature-vec-1 img {
+    width: 45%;
+  }
+}
+#app-body #app-main #app-feature-section .app-feature-section .app-feature-vec-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#app-body #app-main #app-feature-section .app-feature-section .app-feature-vec-2 img {
+  width: 100%;
+  float: left;
+}
+@media (max-width: 1440px) {
+  #app-body #app-main #app-feature-section .app-feature-section .app-feature-vec-2 img {
+    width: 50%;
+  }
+}
+#app-body #app-main #app-feature-section .app-feature-section .container .feature-heading {
+  margin-bottom: 60px;
+}
+#app-body #app-main #app-feature-section .app-feature-section .container .feature-heading h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.6em;
+}
+@media (max-width: 768px) {
+  #app-body #app-main #app-feature-section .app-feature-section .container .feature-heading h2 {
+    font-size: 28px;
+  }
+}
+#app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  #app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid .feature-card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  #app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid .feature-card {
+    width: 330px;
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
+  #app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid .feature-card {
+    width: 280px;
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  #app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid .feature-card {
+    width: 200px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  #app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid .feature-card {
+    width: 65%;
+    text-align: center;
+  }
+}
+#app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid .feature-card img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid .feature-card span {
+  width: 20%;
+  border: 2px solid #fff;
+  margin-bottom: 30px;
+}
+#app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid .feature-card h4 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.6em;
+}
+#app-body #app-main #app-feature-section .app-feature-section .container .feature-image-grid .feature-card p {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.6em;
+}
+#app-body #app-main #app-video-section {
+  position: relative;
+  z-index: 5;
+}
+#app-body #app-main #app-video-section .app-video-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/video-background.png");
+  height: 800px;
+  background-size: cover;
+  position: relative;
+}
+@media (max-width: 768px) {
+  #app-body #app-main #app-video-section .app-video-section {
+    height: 600px;
+  }
+}
+#app-body #app-main #app-video-section .app-video-section .video-vector {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#app-body #app-main #app-video-section .app-video-section .video-vector img {
+  width: 70%;
+  float: right;
+}
+#app-body #app-main #app-video-section .app-video-section .video-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  text-align: center;
+}
+#app-body #app-main #app-video-section .app-video-section .video-main img {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  #app-body #app-main #app-video-section .app-video-section .video-main img {
+    width: 60%;
+  }
+}
+#app-body #app-footer {
+  position: relative;
+  z-index: 8;
+  background-color: #ffe6fa;
+  padding: 60px 0px;
+}
+#app-body #app-footer .app-footer {
+  width: 100%;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 1440px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content {
+  width: 70%;
+}
+@media (max-width: 1440px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content {
+    width: 100%;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-company-info {
+  width: 40%;
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-company-info {
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-company-info img {
+  width: 40%;
+  margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-company-info img {
+    width: 30%;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-company-info p {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.6em;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-product-info {
+  width: 20%;
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-product-info {
+    width: 33%;
+    padding-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-product-info h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3em;
+}
+@media (max-width: 991px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-product-info h3 {
+    font-size: 20px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-product-info .info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-product-info .info-list a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6em;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-product-info .info-list a:hover {
+  color: #ee2197;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-reso-info {
+  width: 20%;
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-reso-info {
+    width: 33%;
+    padding-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-reso-info h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3em;
+}
+@media (max-width: 991px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-reso-info h3 {
+    font-size: 20px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-reso-info .info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-reso-info .info-list a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6em;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-reso-info .info-list a:hover {
+  color: #ee2197;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-comp-info {
+  width: 20%;
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-comp-info {
+    width: 33%;
+    padding-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-comp-info h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3em;
+}
+@media (max-width: 991px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-comp-info h3 {
+    font-size: 20px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-comp-info .info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-comp-info .info-list a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6em;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-left-content .footer-content-box .footer-comp-info .info-list a:hover {
+  color: #ee2197;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-right-mail {
+  width: 30%;
+}
+@media (max-width: 1440px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-right-mail {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-right-mail h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3em;
+}
+@media (max-width: 991px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-right-mail h3 {
+    font-size: 20px;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-right-mail form {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 575px) {
+  #app-body #app-footer .app-footer .container .app-footer-full-section .footer-right-mail form {
+    flex-direction: column;
+  }
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-right-mail form input {
+  padding: 10px 20px;
+  border: 1px solid #000000;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-right-mail form button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #000000;
+}
+#app-body #app-footer .app-footer .container .app-footer-full-section .footer-right-mail form button:hover {
+  opacity: 0.8;
+}
+#app-body #app-footer .app-footer .container .footer-divider {
+  border: 1px solid #000000;
+  width: 100%;
+}
+#app-body #app-footer .app-footer .container .footer-copyright {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#app-body #app-footer .app-footer .container .footer-copyright .footer-copyright-block p {
+  margin: 0;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.6em;
+}
+#app-body #app-footer .app-footer .container .footer-copyright .footer-socialmedia-block .social-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid #000000;
+  border-radius: 100px;
+}
+#app-body #app-footer .app-footer .container .footer-copyright .footer-socialmedia-block .social-icon img {
+  width: 20px;
+}/*# sourceMappingURL=style.css.map */
